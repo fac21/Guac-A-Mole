@@ -2,6 +2,8 @@
 const bowls = document.querySelectorAll('.bowl');
 const avocados = document.querySelectorAll('.avocado');
 const scoreBoard = document.querySelector('.score');
+const game = document.querySelector('.game');
+const gameOver = document.querySelector('.gameOver');
 let timeOver = false;
 let lastBowl;
 let score = 0;
@@ -40,7 +42,8 @@ function jump() {
 
 // start the game
 function startGame() {
-
+    gameOver.classList.remove('gameOverShow');
+    game.classList.remove('opacity');
     scoreBoard.textContent = 0;
     timeOver = false;
     score = 0;
@@ -48,6 +51,10 @@ function startGame() {
     jump()
 
     setTimeout(() => timeOver = true, 10000)
+    setTimeout(() => game.classList.add('opacity')
+    , 10200)
+    setTimeout(() => gameOver.classList.add('gameOverShow')
+    , 10500)
 }
 
 // smash avocado and keep score
