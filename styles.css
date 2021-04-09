@@ -64,7 +64,6 @@ position: absolute;
   bottom: -16%;
 }
 .avocado {
-  background-color: green;
   background: url("avocado.png") bottom center no-repeat;
   background-size: 60%;
   position: absolute;
@@ -73,7 +72,7 @@ position: absolute;
   height: 100%;
   transition: all 0.4s;
 }
-.bowl.up.avocado {
+.bowl.show .avocado {
   top: -25%;
 }
 @media (min-width: 769px) {
