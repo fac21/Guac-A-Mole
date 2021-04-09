@@ -33,7 +33,7 @@ h1 {
 p {
     position: relative;
     padding-top: 1rem;
-  font-size: var(--medium-font);
+    font-size: var(--medium-font);
 }
 .score {
 position: absolute;
@@ -79,6 +79,26 @@ position: absolute;
 .bowl.show .avocado {
   top: -25%;
 }
+
+button{
+  color: #081c15;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(144, 190,109);
+  background:  rgb(144, 190,109);
+  transition: 0.6s ease;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  
+}
+button:hover{
+  border: 1px solid rgb(87, 117,144);
+  background: rgb(87, 117,144);
+  color: white;
+
 .gameOver {
     transform: scale(0);
     position: absolute;
@@ -88,6 +108,7 @@ position: absolute;
 }
 .gameOverShow {
     transform: scale(1)
+
 }
 @media (min-width: 769px) {
   .game {
