@@ -12,6 +12,9 @@
   --medium-font: 1.5rem;
   --large-font: 2.5rem;
 }
+.opacity {
+    opacity: 0.5;
+}
 body {
     padding: 1rem 0;
   display: flex;
@@ -44,6 +47,7 @@ position: absolute;
     margin: 1rem 0 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  transition: all 0.4s;
 }
 .bowl {
   height: 100px;
@@ -74,6 +78,16 @@ position: absolute;
 }
 .bowl.show .avocado {
   top: -25%;
+}
+.gameOver {
+    transform: scale(0);
+    position: absolute;
+    top: 40%;
+    z-index: 5;
+    transition: all 0.2s;
+}
+.gameOverShow {
+    transform: scale(1)
 }
 @media (min-width: 769px) {
   .game {
